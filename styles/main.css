@@ -16,6 +16,7 @@ main {
   border: solid 1px black;
   border-radius: 50px;
   background-color: antiquewhite;
+  color: #222;
 }
 
 .divLeft {

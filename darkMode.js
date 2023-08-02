@@ -5,11 +5,11 @@ const icon = document.querySelector('#i');
 function verifyToF () {
   if (btn.checked) {
     icon.className = "bi bi-sun-fill"
-    corpo.style.background = '#eaeaea'
+    corpo.className = 'light'
   }
   else {
     icon.className = "bi bi-moon-fill"
-    corpo.style.background = '#222'
+    corpo.className = 'dark'
   }
 }
 

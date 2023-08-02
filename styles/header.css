@@ -10,10 +10,6 @@
   font-family: 'Shadows Into Light', cursive;
 }
 
-body {
-  background-color: #3f690f;
-}
-
 ::selection {
   background-color: #eaeaea;
   color: #222;
@@ -47,7 +43,7 @@ header {
 .navBar h1 {
   font-size: 3vw;
   font-weight: bold;
-  color: #eaeaea;
+  color: inherit;
 }
 
 .navBar nav {
@@ -60,7 +56,7 @@ header {
 .navBar nav a {
   text-decoration: none;
   font-size: 1.8vw;
-  color: #eaeaea;
+  color: inherit;
   font-weight: 500;
 }
 
@@ -97,5 +93,5 @@ header {
 }
 
 .socialMedia ul li a {
-  color: #222;
+  color: inherit;
 }

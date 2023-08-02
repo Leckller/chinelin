@@ -1,3 +1,17 @@
+.light {
+  transition: 1.5s;
+  background-color: #eaeaea;
+  color: #222;
+}
+
+.dark {
+  transition: 1.5s;
+  background-color: #222;
+  color: #eaeaea;
+}
+
+
+
 #dark.darkMode {
   opacity: 0;
   width: 0;
