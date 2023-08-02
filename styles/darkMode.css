@@ -4,10 +4,6 @@
   height: 0;
 }
 
-#dark:not(:checked) + i{
-  transform: rotate(45deg);
-}
-
 .labelInput:hover {
   cursor: pointer;
 }
