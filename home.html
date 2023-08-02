@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/darkMode.css">
     <title>Havaianas</title>
 </head>
 
@@ -32,14 +33,18 @@
                     <a href=""><i class="bi bi-facebook"></i></a>
                 </li>
                 <li>
-                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <label class="labelInput">
+                        <input id="dark" class="darkMode" type="checkbox" checked>
+                        <i id="i" class="bi bi-brightness-high-fill"></i>
+
+                    </label>
                 </li>
             </ul>
         </div>
     </header>
     <main>
-        <div class="photos">
-            <img class="imageViewBlur" src="img/babyNelo-removebg-preview.png" alt="">
+        <img class="imageViewBlur" src="img/babyNelo-removebg-preview.png" alt="">
+        <div id="botaoEsquerdo" class="mainPhoto">
             <div class="divLeft">
                 <a class="b-left"></a>
                 <i class="bi bi-chevron-left left-i"></i>
@@ -49,9 +54,11 @@
                 <i class="bi bi-chevron-right right-i"></i>
                 <a class="b-right"></a>
             </div>
-            <img class="imageViewBlur" src="img/babyNelo-removebg-preview.png" alt="">
         </div>
+        <img class="imageViewBlur" src="img/babyNelo-removebg-preview.png" alt="">
     </main>
+    <script src="script.js"></script>
+    <script src="darkMode.js"></script>
 </body>
 
 </html>
