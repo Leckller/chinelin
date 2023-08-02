@@ -19,7 +19,7 @@ body {
   color: #222;
 }
 
-:focus {
+.socialMedia ul li input:focus {
   border: transparent;
   outline: none;
   padding-left: 10px;
