@@ -1,0 +1,110 @@
+main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 25vmax;
+  overflow: hidden;
+  background-color: inherit;
+  /* background-color: black; */
+}
+
+.ab {
+  position: absolute;
+}
+
+.ab img {
+  width: 20vw;
+}
+
+.centerM {
+  animation: toCenter 1.2s forwards cubic-bezier(.71,1.51,1,1);
+}
+
+.backM {
+  animation: toLeft 1.2s forwards cubic-bezier(.71,1.51,1,1);
+}
+
+.f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f p {
+  font-size: 1vw;
+}
+
+.btn-left, .btn-right {
+  position: absolute;
+  width: 2.5%;
+  height: 10%;
+  background-color: #eaeaea;
+  border-radius: 100%;
+  top: 50%;
+  z-index: 1000;
+}
+
+.btn-left {
+  left: 30%;
+}
+
+.btn-right {
+  right: 30%;
+}
+
+.Promo {
+  animation: promo 2s infinite alternate ease-in-out;
+  position: absolute;
+  right: 8vw;
+}
+
+.Promo p {
+  font-size: 5vw;
+}
+
+.disconto {
+  text-decoration: line-through 1px;
+}
+
+/* .hidPrice {
+  position: absolute;
+  width: 39vw;
+  height: 20vh;
+  top: 40vh;
+  left: 0;
+  background-color: inherit;
+  z-index: 1;
+} */
+
+@keyframes toCenter {
+  0% {
+    transform: translate(0, 0);
+    filter: blur(1.5px);
+  }
+  100% {
+    transform: translate(39vw,0) scale(1.01);
+    filter: blur(0px);
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translate(39vw, 0) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    filter: blur(1.5px);
+  }
+}
+
+@keyframes promo {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
